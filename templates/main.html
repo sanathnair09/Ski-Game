@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ski Game</title>
+    <link rel="icon" href="{{url_for('static', filename='assets/gamescene/rock.png')}}" type="image/x-icon"/>
+
+    <link href="{{url_for('static', filename='main.css')}}" rel="stylesheet" type="text/css" />
+    
+    <script src="{{url_for('static', filename='phaser.js')}}"></script>    
+    <script src="{{url_for('static', filename='gameFiles/preload.js')}}"></script>
+    <script src="{{url_for('static', filename='gameFiles/create.js')}}"></script>
+    <script src="{{url_for('static', filename='gameFiles/update.js')}}"></script>
+    <script src="{{url_for('static', filename='scenes/startScreen.js')}}"></script>
+    <script src="{{url_for('static', filename='scenes/gameScene.js')}}"></script>
+    <script src="{{url_for('static', filename='scenes/endScene.js')}}"></script>
+    <script src="{{url_for('static',filename='main.js')}}"></script>
+    <script src="{{url_for('static', filename='gameFiles/function.js')}}"></script>
+    <script src="{{url_for('static', filename='gameFiles/helperFunctions/updateHelper.js')}}"></script>
+    <script src="{{url_for('static', filename='gameFiles/helperFunctions/createHelper.js')}}"></script>
+    <script src="{{url_for('static', filename='gameFiles/helperFunctions/socketHelper.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    
+    
+  </head>
+  <body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js""></script>
+
+  <script src="{{url_for('static', filename='gameFiles/socket.js')}}"></script>
+  </body>
+</html>
